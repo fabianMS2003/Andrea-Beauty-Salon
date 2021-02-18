@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+	background-color:#b3ffe4;
+	font-family:"Arial";
+	font-size:20px;
+	font-weight:normal;
+}
+
+header, footer{
+	width:90%;
+	max-width:1000px;
+	margin:20px auto;
+}
+
+header nav{
+	background: #f9a1bc;
+	overflow:hidden;
+}
+
+header nav ul{
+	list-style:none;
+}
+header nav ul li{
+	float:left;
+}
+
+header nav ul li a{
+	display:block;
+	text-decoration:none;
+	text-align:center;
+}
+
+header nav ul li a:hover{
+	background:#ff3c77;
+}
+
+.menu li {
+	display:inline-block;	
+}
+
+.menu li a {
+	padding:10px 10px;
+	display:inline-block;
+	color:#000;   
+}
+
+.galeria{
+	font-family:'arial';	
+}
+
+.galeria h1{
+	text-align: center;
+	margin:20px 0 15px 0;
+	font-weight:300px;
+}
+
+.linea{
+	border-top: 5px solid #000;
+    margin-bottom: 15px;
+}
+
+.contenedor-imagenes{
+	display: flex;
+	width: 85%; 
+	margin: auto;
+	justify-content: space around;
+	flex-wrap: wrap;
+	border-radius:3px;
+}
+.contenedor-imagenes .imagen{
+    width:32%;
+    position: relative;
+    height: 250px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0 .75)
+}
+.imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #f9a1bc;
+    transition: 1s;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+}
+.overlay h2{
+    color: coral;
+    font-weight: 300;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.imagen:hover .overlay{
+    height: 100%;
+    cursor: pointer;
+}
+@media screen and (max-width:1000px){
+    .contenedor-imagenes{
+        width: 95%;
+ }
+
+    
+    h2 { 
+	font-family:"Arial";
+	font-size:20px;
+	font-weight:normal;
+}
+    
+}
+footer{
+	color: #fff;
+	font-family:"Arial";
+	font-size:20px;
+	font-weight:normal;
+	float:none;   
+    background: #000;
+    text-align: center;
+}
